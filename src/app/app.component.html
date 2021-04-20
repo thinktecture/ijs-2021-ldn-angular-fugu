@@ -1,0 +1,8 @@
+<button (click)="open()">Open</button>
+<button (click)="save()">Save</button>
+
+<canvas #canvas width="600" height="480"
+        (pointerdown)="onPointerDown($event)"
+        (pointermove)="onPointerMove(canvas, $event)"
+        (pointerup)="onPointerUp()"
+></canvas>
